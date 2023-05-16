@@ -1,0 +1,209 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Download the orange tutorial files\
+Open the html file in firefox to preview the end result\
+\
+Open orange_tutorial_css.psd and review the design. Notice how it is using the 960 grid system. This is one system that is available to help you create columns that can later be translated into a responsive site (like for mobile). I\'92ll get into responsive sites later in the semester. \
+\
+Open orange_tutorial_css.psd and review the design\
+\
+Create a new folder - name it orange_tutorial\
+Place a folder inside of it called Images\
+Cut out the header graphic and place it in the image folder. Save for Web and name it header960x250.jpg\
+\
+Copy all of the other images from the downloaded zip file\
+\
+Create a new html doc in dreamweaver\
+Select HTML 5 doctype\
+Save as index.html\
+Select Classic Workspace\
+View the page as Split View\
+Change the page title to Home Page. Show where this is in the code\
+\
+Create a style sheet - Select ID - #wrapper for selector - New Style Sheet File \
+Save as global.css\
+\
+\
+#wrapper \{\
+	width: 960px;\
+	margin-top: 0px;\
+	margin-right: auto;\
+	margin-bottom: 0px;\
+	margin-left: auto;\
+	position: relative;\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 Select Insert CSS div after you have described the attributes\
+Insert <!-- wrapper starts //--> and <!-- wrapper ends //--> above and below the opening and closing div of the #wrapper\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Click on page properties\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screen shot 2010-09-30 at 8.05.54 PM.png \width17480 \height2800
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+Choose #999999 as the background color\
+\
+Delete the text inside of the wrapper and insert a <header> tag </header>\
+\
+Add <!-- header starts //-->  & <!-- header ends //--> \
+\
+Click on the CSS sheet and type\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 header \{\
+	\
+	\
+\}\
+\
+Or select the tag header in the CSS styles window. \
+\
+Go to the CSS Styles panel and the header div will show up now. Click on it and add these attributes:\
+\
+header \{\
+	height: 250px;\
+	width: 960px;	\
+	\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 Insert the header.jpg in the header div. Give it an alt name of Orange Header image. \
+<img src="images/header960x250.jpg" width="960" height="250" alt="Orange Header Image">\
+\
+Below the closing of  header div we are going to use HTML5 nav div. \
+\
+Create a new div called <nav>. Select the tag option and scroll down to click on nav. For now do not put any attributes. Instead go to the source code and type this: \
+\
+<!-- nav starts //--> \
+ <nav>\
+      <ul>\
+        <li><a href="page2.html">Horizontal Link 1</a></li>\
+        <li><a href="page2.html">Horizontal Link 2</a></li>\
+        <li><a href="page2.html">Horizontal Link 3</a></li>\
+        <li><a href="page2.html">Horizontal Link 3</a></li>\
+      </ul>\
+    </nav>\
+    \
+    <!-- nav ends //--> \
+\
+The unordered list with four links will automatically create a bullet point. Ignore that for now. Go back to your CSS panel and open the nav element. \
+\
+Give the nav this attributes:\
+nav \{\
+	font-family: Arial, Helvetica, sans-serif;\
+	height: 100px;\
+	width: 960px;\
+	padding-top: 5px;\
+	padding-bottom: 5px;\
+	color: #FFF;\
+\}\
+\
+Create the tags for UL and LI. Give them these attributes:\
+\
+li \{\
+	float: left;\
+	width: 240px;\
+	text-align: center;\
+\}\
+\
+240 is 960 divided by 4 (for four links). This will center them equally across. Choose a smaller number like 220 to see how it changes. 220 works better at aligning the UL. \
+\
+\
+ul \{\
+	width: 960px;\
+	margin: auto;\
+	list-style: none;\
+	background-color: #666;\
+	padding-top: 10px;\
+	padding-bottom: 15px;\
+	height: 10px;\
+\}\
+\
+\
+\
+\
+Below the closing nav div insert in a new css style aside\
+\
+\}\
+aside\{\
+	font-family: Arial, Helvetica, sans-serif;\
+	font-size: 14px;\
+	line-height: 20px;\
+	color: #FFF;\
+	float: left;\
+	padding-top: 10px;\
+	padding-left: 10px;\
+	position: relative;\
+	height: 600px;\
+\}\
+\
+\
+In the design view type:\
+Vertical Link 1 - hard enter\
+Vertical Link 2  - hard enter\
+Vertical Link 3  - hard enter\
+Vertical Link 4  - hard enter\
+Sandwich the opening closing div with <!-- aside starts //--> and <!-- aside ends //--> \
+\
+Save file and CSS\
+\
+Below the closing left links div insert in a new css tag <section>\
+\
+\}\
+section \{\
+	font-family: Arial, Helvetica, sans-serif;\
+	font-size: 14px;\
+	line-height: 25px;\
+	background-image: url(images/text_bg540x399.jpg);\
+	width: 540px;\
+	position: relative;\
+	top: 0px;\
+	color: #FFF;\
+	left: 330px;\
+	height: 399px;\
+\}\
+\
+Sandwich the opening closing div with <!-- section starts //--> and <!-- section ends //--> \
+\
+Paste text inside of the div:\
+A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. A bunch of text about interesting stuff. \
+\
+Below the body text container closing div insert in a new css style #footer_image\
+\
+\}\
+footer \{\
+	position: relative;\
+	left: -90px;\
+\}\
+\
+Very little positioning is necessary because it was set to relative. It will go below the links div. \
+\
+Insert the orange image and give it an alt name of Orange Footer Image.\
+<img src="images/orange220x205.jpg" width="220" height="205" alt="Orange Footer Image">\
+\
+In the Design view click on the Orange Footer Image. Click - Behaviors - Swap Image and select the rollover image. \
+\
+Add <!-- footer image starts //--> and <!-- footer image ends //-->\
+\
+Test in the browser\
+\
+Now lets change the look of the links. Add the following tags: a:link , a:visited, a:hover, and a:active. Choose text-decoration: none and change the color for each. Make the a:link white and a:hover orange. \
+\
+\
+Create a new HTML5 document. Name it page2.html. Type the word "Page 2" in the design view and in the title tag. \
+\
+Select each link and link it to page 2.\
+\
+Click Create New CSS Style in the CSS Style's window. \
+Select Compound and select a:link. Choose a color for this attribute. Create a:hover, a:visited, and a:active choosing a different color for each. \
+\
+Save and test the links in the browser. \
+\
+Return to the styles and set the links to Text Decoration - None to remove the underline for the a:link, \
+}
